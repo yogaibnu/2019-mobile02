@@ -36,7 +36,14 @@ public class MainActivity extends AppCompatActivity {
 
 	public void handleGuess(View view) {
 		// TODO: Tambahkan logika untuk melakukan pengecekan angka
-
+        int input = Integer.parseInt(inputNumber.getText().toString());
+        outputText.setText(""+random);
+        if(input == random){
+            Toast.makeText(this, "Jawaban Anda Benar !", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, "Jawaban Anda Salah !", Toast.LENGTH_SHORT).show();
+        }
 	}
 
 	public void handleReset(View view) {
