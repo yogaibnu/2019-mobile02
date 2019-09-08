@@ -29,8 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
 	// TODO: generate angka random di sini
 	private void initRandomNumber() {
-
-
+        final int min = 1;
+        final int max = 100;
+        random = new Random().nextInt((max - min) + 1) + min;
 	}
 
 	public void handleGuess(View view) {
