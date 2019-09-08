@@ -40,14 +40,18 @@ public class MainActivity extends AppCompatActivity {
         int input = Integer.parseInt(inputNumber.getText().toString());
         outputText.setText(""+random);
         if(input == random){
-            Toast.makeText(this, "Jawaban Anda Benar !", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Selamat, Jawaban Anda Benar!", Toast.LENGTH_SHORT).show();
         }
         else{
-            Toast.makeText(this, "Jawaban Anda Salah !", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Jawaban Anda Salah!", Toast.LENGTH_SHORT).show();
         }
 	}
 
 	public void handleReset(View view) {
 		// TODO: Reset tampilan
+		inputNumber.setText("");
+		initRandomNumber();
+		outputText.setText(""+random);
+		Toast.makeText(this, "Silahkan Menebak Kembali", Toast.LENGTH_SHORT).show();
 	}
 }
