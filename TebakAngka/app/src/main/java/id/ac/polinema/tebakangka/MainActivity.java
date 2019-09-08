@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 		// TODO: bind layout di sini
 		inputNumber = findViewById(R.id.number_input);
+        outputText = findViewById(R.id.textView);
 		initRandomNumber();
 	}
 

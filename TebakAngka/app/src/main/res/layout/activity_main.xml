@@ -44,4 +44,11 @@
 		android:onClick="handleReset"
 		/>
 
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="match_parent"
+		android:layout_height="51dp"
+		android:layout_margin="10dp"
+		android:text="TextView" />
+
 </LinearLayout>
